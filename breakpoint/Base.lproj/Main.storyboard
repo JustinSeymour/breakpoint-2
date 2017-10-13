@@ -559,7 +559,7 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add people to your group..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdU-jA-CEi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add people to your group..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="zdU-jA-CEi">
                                         <rect key="frame" x="0.0" y="119" width="335" height="19"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -643,7 +643,7 @@
                         <outlet property="descriptiontxtField" destination="sKK-N9-85h" id="Vzr-lP-8Ml"/>
                         <outlet property="doneBtn" destination="lJw-6J-X4M" id="xDU-Mp-91U"/>
                         <outlet property="emailSearchtxtField" destination="Czw-Ot-2Yn" id="B6g-gb-iA2"/>
-                        <outlet property="groupMemberLbl" destination="Cms-SQ-9Ri" id="pum-HW-luu"/>
+                        <outlet property="groupMemberLbl" destination="zdU-jA-CEi" id="d2P-7n-zLC"/>
                         <outlet property="tableView" destination="XBs-0x-6SU" id="lMS-Wv-aYZ"/>
                         <outlet property="titleTxtField" destination="e9I-xF-ba0" id="xYP-TY-WYV"/>
                     </connections>
