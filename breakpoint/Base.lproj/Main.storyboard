@@ -104,17 +104,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="4eV-VN-K4Q">
-                                                    <rect key="frame" x="18" y="18" width="50" height="56"/>
+                                                    <rect key="frame" x="0.0" y="18" width="50" height="56"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="50t-8U-ajU"/>
                                                         <constraint firstAttribute="height" constant="56" id="hrb-l0-2fT"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6uM-IO-Gbi">
-                                                    <rect key="frame" x="78" y="18" width="279" height="63.5"/>
+                                                    <rect key="frame" x="0.0" y="18" width="0.0" height="63.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8A-vr-6xv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="279" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="u9t-PN-aR4"/>
                                                             </constraints>
@@ -123,7 +123,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nUd-tV-SpR">
-                                                            <rect key="frame" x="0.0" y="28" width="279" height="35.5"/>
+                                                            <rect key="frame" x="0.0" y="28" width="0.0" height="35.5"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
                                                             <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -572,17 +572,52 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XBs-0x-6SU">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XBs-0x-6SU">
                                         <rect key="frame" x="0.0" y="208" width="335" height="349"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ud6-nM-vd8">
-                                                <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="60" id="ud6-nM-vd8" customClass="UserCell" customModule="breakpoint" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="335" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ud6-nM-vd8" id="8Y8-4m-KOK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="fMz-KE-lMq">
+                                                            <rect key="frame" x="18" y="8" width="44" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="44" id="2er-4S-1vR"/>
+                                                                <constraint firstAttribute="height" constant="44" id="ifB-VV-IPz"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-XN-ddn">
+                                                            <rect key="frame" x="82" y="18" width="183.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                            <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="LOo-So-owr">
+                                                            <rect key="frame" x="299" y="8" width="18" height="34"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="fMz-KE-lMq" firstAttribute="leading" secondItem="8Y8-4m-KOK" secondAttribute="leadingMargin" constant="10" id="8Qj-FW-8Q4"/>
+                                                        <constraint firstItem="LOo-So-owr" firstAttribute="top" secondItem="8Y8-4m-KOK" secondAttribute="topMargin" id="BAc-mM-bcJ"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="BaI-XN-ddn" secondAttribute="bottom" constant="10" id="GrZ-Vy-yZ8"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="LOo-So-owr" secondAttribute="bottom" constant="10" id="HO4-0n-Jth"/>
+                                                        <constraint firstItem="BaI-XN-ddn" firstAttribute="leading" secondItem="fMz-KE-lMq" secondAttribute="trailing" constant="20" id="ZfD-Az-IlN"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="LOo-So-owr" secondAttribute="trailing" constant="10" id="aLm-DA-vJf"/>
+                                                        <constraint firstItem="BaI-XN-ddn" firstAttribute="top" secondItem="8Y8-4m-KOK" secondAttribute="topMargin" constant="10" id="duA-qm-TPq"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="fMz-KE-lMq" secondAttribute="bottom" id="yjI-fg-pSW"/>
+                                                        <constraint firstItem="fMz-KE-lMq" firstAttribute="top" secondItem="8Y8-4m-KOK" secondAttribute="topMargin" id="zCm-rf-5nU"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <outlet property="checkImage" destination="LOo-So-owr" id="kZe-S9-8Ik"/>
+                                                    <outlet property="emailLbl" destination="BaI-XN-ddn" id="sOW-oI-TVn"/>
+                                                    <outlet property="profileImage" destination="fMz-KE-lMq" id="NZH-NI-5lA"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -613,7 +648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGk-eQ-5qM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="723"/>
+            <point key="canvasLocation" x="1596" y="722.78860569715152"/>
         </scene>
         <!--AuthVC-->
         <scene sceneID="gQc-qr-JqU">
@@ -844,5 +879,6 @@
         <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
         <image name="send" width="29" height="29"/>
+        <image name="whiteCheckmark" width="18" height="14"/>
     </resources>
 </document>
