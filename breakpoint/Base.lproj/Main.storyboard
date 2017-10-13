@@ -508,6 +508,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wba-0P-rR3">
                                         <rect key="frame" x="20" y="34" width="21" height="22"/>
                                         <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeBtnWasPressed:" destination="tR4-r2-S86" eventType="touchUpInside" id="LXi-3r-U4j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -637,7 +640,6 @@
                         <viewLayoutGuide key="safeArea" id="8fm-Tz-x0R"/>
                     </view>
                     <connections>
-                        <outlet property="closeBtnWasPressed" destination="wba-0P-rR3" id="X65-wV-cXd"/>
                         <outlet property="descriptiontxtField" destination="sKK-N9-85h" id="Vzr-lP-8Ml"/>
                         <outlet property="doneBtn" destination="lJw-6J-X4M" id="xDU-Mp-91U"/>
                         <outlet property="emailSearchtxtField" destination="Czw-Ot-2Yn" id="B6g-gb-iA2"/>
