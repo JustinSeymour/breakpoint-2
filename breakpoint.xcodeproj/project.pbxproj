@@ -12,6 +12,7 @@
 		740B84E61F862635000A71BE /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B84E51F862635000A71BE /* MeVC.swift */; };
 		740B84E81F863632000A71BE /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B84E71F863632000A71BE /* CreatePostVC.swift */; };
 		740B84EA1F863B5C000A71BE /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B84E91F863B5C000A71BE /* UIViewExt.swift */; };
+		74346D9C1F90A70B008ED1B5 /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74346D9B1F90A70B008ED1B5 /* CreateGroupsVC.swift */; };
 		74860A8A1F84D05E005DE3DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74860A891F84D05E005DE3DD /* AppDelegate.swift */; };
 		74860A8C1F84D05E005DE3DD /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74860A8B1F84D05E005DE3DD /* FeedVC.swift */; };
 		74860A8E1F84D05E005DE3DD /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74860A8D1F84D05E005DE3DD /* GroupsVC.swift */; };
@@ -33,6 +34,7 @@
 		740B84E51F862635000A71BE /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		740B84E71F863632000A71BE /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		740B84E91F863B5C000A71BE /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		74346D9B1F90A70B008ED1B5 /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		74860A861F84D05E005DE3DD /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74860A891F84D05E005DE3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74860A8B1F84D05E005DE3DD /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				74CEA2A41F84E1FF00C1C159 /* LoginVC.swift */,
 				740B84E51F862635000A71BE /* MeVC.swift */,
 				740B84E71F863632000A71BE /* CreatePostVC.swift */,
+				74346D9B1F90A70B008ED1B5 /* CreateGroupsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				74860A8E1F84D05E005DE3DD /* GroupsVC.swift in Sources */,
 				74CEA2A51F84E1FF00C1C159 /* LoginVC.swift in Sources */,
 				740B84E41F861621000A71BE /* AuthService.swift in Sources */,
+				74346D9C1F90A70B008ED1B5 /* CreateGroupsVC.swift in Sources */,
 				74860A8A1F84D05E005DE3DD /* AppDelegate.swift in Sources */,
 				74CEA2AA1F84E5A100C1C159 /* ShadowView.swift in Sources */,
 				740B84E81F863632000A71BE /* CreatePostVC.swift in Sources */,

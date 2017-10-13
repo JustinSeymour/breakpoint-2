@@ -29,7 +29,7 @@ class DataService {
     }
     
     var REF_GROUPS: DatabaseReference {
-        return _REF_USERS
+        return _REF_GROUPS
     }
     
     var REF_FEED: DatabaseReference {
